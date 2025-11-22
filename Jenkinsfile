@@ -40,10 +40,10 @@ pipeline {
         stage('Deploy') {
             // Environment variables for easier management
             environment {
-                DOCKER_IMAGE_NAME = 'my-local-node-app'
+                DOCKER_IMAGE_NAME = 'img_app01'
                 // Use a simple tag like 'latest' for a local run, or the build number
                 IMAGE_TAG = 'latest' 
-                CONTAINER_NAME = 'my-local-app-container'
+                CONTAINER_NAME = 'app01'
             }
             steps {
                 script {
